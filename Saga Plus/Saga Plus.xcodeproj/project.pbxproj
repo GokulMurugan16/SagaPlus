@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42F55E216DC6AF2AFB60810B /* Pods_Saga_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53508090374497D0870C5CCE /* Pods_Saga_Plus.framework */; };
 		92562B1525A287E10020C957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92562B1425A287E10020C957 /* AppDelegate.swift */; };
 		92562B1725A287E10020C957 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92562B1625A287E10020C957 /* SceneDelegate.swift */; };
 		92562B1925A287E10020C957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92562B1825A287E10020C957 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53508090374497D0870C5CCE /* Pods_Saga_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saga_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		673FE24A97014EF12D78F85D /* Pods-Saga Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saga Plus.release.xcconfig"; path = "Target Support Files/Pods-Saga Plus/Pods-Saga Plus.release.xcconfig"; sourceTree = "<group>"; };
 		92562B1125A287E10020C957 /* Saga Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saga Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92562B1425A287E10020C957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92562B1625A287E10020C957 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		92562B1D25A287E30020C957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92562B2025A287E30020C957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92562B2225A287E30020C957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD160D2AEDFC51C67C9E3BC /* Pods-Saga Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saga Plus.debug.xcconfig"; path = "Target Support Files/Pods-Saga Plus/Pods-Saga Plus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F55E216DC6AF2AFB60810B /* Pods_Saga_Plus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51EDF581F6E314C50B0ACAB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDD160D2AEDFC51C67C9E3BC /* Pods-Saga Plus.debug.xcconfig */,
+				673FE24A97014EF12D78F85D /* Pods-Saga Plus.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		92562B0825A287E10020C957 = {
 			isa = PBXGroup;
 			children = (
 				92562B1325A287E10020C957 /* Saga Plus */,
 				92562B1225A287E10020C957 /* Products */,
+				51EDF581F6E314C50B0ACAB2 /* Pods */,
+				959B84793C1D456F99E31394 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Saga Plus";
 			sourceTree = "<group>";
 		};
+		959B84793C1D456F99E31394 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53508090374497D0870C5CCE /* Pods_Saga_Plus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92562B2525A287E30020C957 /* Build configuration list for PBXNativeTarget "Saga Plus" */;
 			buildPhases = (
+				6F0FD3546A16E61AD4694BE2 /* [CP] Check Pods Manifest.lock */,
 				92562B0D25A287E10020C957 /* Sources */,
 				92562B0E25A287E10020C957 /* Frameworks */,
 				92562B0F25A287E10020C957 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F0FD3546A16E61AD4694BE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Saga Plus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92562B0D25A287E10020C957 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		92562B2625A287E30020C957 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD160D2AEDFC51C67C9E3BC /* Pods-Saga Plus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +353,7 @@
 		};
 		92562B2725A287E30020C957 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673FE24A97014EF12D78F85D /* Pods-Saga Plus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
