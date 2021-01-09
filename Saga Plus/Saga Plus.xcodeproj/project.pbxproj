@@ -17,6 +17,7 @@
 		92562B2D25A28E350020C957 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92562B2C25A28E350020C957 /* GoogleService-Info.plist */; };
 		92562B3B25A293730020C957 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92562B3A25A293730020C957 /* Extension.swift */; };
 		92D09D8225AA65B200A98859 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D09D8125AA65B200A98859 /* SignUpViewController.swift */; };
+		92D09D8525AA720C00A98859 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D09D8425AA720C00A98859 /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		92562B2C25A28E350020C957 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92562B3A25A293730020C957 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		92D09D8125AA65B200A98859 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		92D09D8425AA720C00A98859 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		BDD160D2AEDFC51C67C9E3BC /* Pods-Saga Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saga Plus.debug.xcconfig"; path = "Target Support Files/Pods-Saga Plus/Pods-Saga Plus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				92562B1425A287E10020C957 /* AppDelegate.swift */,
 				92562B1625A287E10020C957 /* SceneDelegate.swift */,
 				92562B1825A287E10020C957 /* ViewController.swift */,
+				92D09D8425AA720C00A98859 /* ForgotPasswordViewController.swift */,
 				92562B1A25A287E10020C957 /* Main.storyboard */,
 				92D09D8125AA65B200A98859 /* SignUpViewController.swift */,
 				92562B1D25A287E30020C957 /* Assets.xcassets */,
@@ -217,6 +220,7 @@
 			files = (
 				92562B1925A287E10020C957 /* ViewController.swift in Sources */,
 				92562B1525A287E10020C957 /* AppDelegate.swift in Sources */,
+				92D09D8525AA720C00A98859 /* ForgotPasswordViewController.swift in Sources */,
 				92562B1725A287E10020C957 /* SceneDelegate.swift in Sources */,
 				92562B3B25A293730020C957 /* Extension.swift in Sources */,
 				92D09D8225AA65B200A98859 /* SignUpViewController.swift in Sources */,

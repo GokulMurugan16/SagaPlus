@@ -59,6 +59,8 @@ class SignUpViewController: UIViewController {
                         errorAlert = "Invalid E-Mail"
                     case .weakPassword:
                         errorAlert = "Weak Password"
+                    case.wrongPassword:
+                        errorAlert = "Wrong Password"
                     
                     default:
                         errorAlert = "Sign Up Unsucessfull"

@@ -30,13 +30,6 @@ class ViewController: UIViewController {
     @IBAction func Google_SignIn(_ sender: Any) {
     }
     
-    // MARK: Forgot Password
-    @IBAction func Forgot_Password(_ sender: Any) {
-    }
-    
-    // MARK: Sign Up
-    @IBAction func Sign_Up(_ sender: Any) {
-    }
     
     // MARK: Login Button
     @IBAction func Login_Button(_ sender: Any) {
@@ -53,6 +46,7 @@ class ViewController: UIViewController {
             Auth.auth().signIn(withEmail: E_Mail.text!.lowercased(), password: Password.text!) {authResult, error in
                             if(authResult != nil)
                             {
+                                self.performSegue(withIdentifier: "Sucessful-SignUp", sender: self)
                                 self.E_Mail.text = ""
                                 self.Password.text = ""
                             }
