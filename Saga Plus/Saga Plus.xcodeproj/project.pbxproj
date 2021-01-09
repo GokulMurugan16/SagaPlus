@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		92562B1C25A287E10020C957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92562B1A25A287E10020C957 /* Main.storyboard */; };
 		92562B1E25A287E30020C957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92562B1D25A287E30020C957 /* Assets.xcassets */; };
 		92562B2125A287E30020C957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92562B1F25A287E30020C957 /* LaunchScreen.storyboard */; };
+		92562B2D25A28E350020C957 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92562B2C25A28E350020C957 /* GoogleService-Info.plist */; };
+		92562B3B25A293730020C957 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92562B3A25A293730020C957 /* Extension.swift */; };
+		92D09D8225AA65B200A98859 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D09D8125AA65B200A98859 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		92562B1D25A287E30020C957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92562B2025A287E30020C957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92562B2225A287E30020C957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92562B2C25A28E350020C957 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92562B3A25A293730020C957 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		92D09D8125AA65B200A98859 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BDD160D2AEDFC51C67C9E3BC /* Pods-Saga Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saga Plus.debug.xcconfig"; path = "Target Support Files/Pods-Saga Plus/Pods-Saga Plus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +54,6 @@
 				BDD160D2AEDFC51C67C9E3BC /* Pods-Saga Plus.debug.xcconfig */,
 				673FE24A97014EF12D78F85D /* Pods-Saga Plus.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,13 +78,16 @@
 		92562B1325A287E10020C957 /* Saga Plus */ = {
 			isa = PBXGroup;
 			children = (
+				92562B2C25A28E350020C957 /* GoogleService-Info.plist */,
 				92562B1425A287E10020C957 /* AppDelegate.swift */,
 				92562B1625A287E10020C957 /* SceneDelegate.swift */,
 				92562B1825A287E10020C957 /* ViewController.swift */,
 				92562B1A25A287E10020C957 /* Main.storyboard */,
+				92D09D8125AA65B200A98859 /* SignUpViewController.swift */,
 				92562B1D25A287E30020C957 /* Assets.xcassets */,
 				92562B1F25A287E30020C957 /* LaunchScreen.storyboard */,
 				92562B2225A287E30020C957 /* Info.plist */,
+				92562B3A25A293730020C957 /* Extension.swift */,
 			);
 			path = "Saga Plus";
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 				92562B0D25A287E10020C957 /* Sources */,
 				92562B0E25A287E10020C957 /* Frameworks */,
 				92562B0F25A287E10020C957 /* Resources */,
+				AEEB1361E0BAAB108AD32183 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92562B2125A287E30020C957 /* LaunchScreen.storyboard in Resources */,
+				92562B2D25A28E350020C957 /* GoogleService-Info.plist in Resources */,
 				92562B1E25A287E30020C957 /* Assets.xcassets in Resources */,
 				92562B1C25A287E10020C957 /* Main.storyboard in Resources */,
 			);
@@ -181,6 +191,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AEEB1361E0BAAB108AD32183 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Saga Plus/Pods-Saga Plus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Saga Plus/Pods-Saga Plus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Saga Plus/Pods-Saga Plus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,6 +218,8 @@
 				92562B1925A287E10020C957 /* ViewController.swift in Sources */,
 				92562B1525A287E10020C957 /* AppDelegate.swift in Sources */,
 				92562B1725A287E10020C957 /* SceneDelegate.swift in Sources */,
+				92562B3B25A293730020C957 /* Extension.swift in Sources */,
+				92D09D8225AA65B200A98859 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
