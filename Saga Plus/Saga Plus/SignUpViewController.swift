@@ -39,8 +39,13 @@ class SignUpViewController: UIViewController {
             Auth.auth().createUser(withEmail: E_Mail.text!, password: Password.text!) { auth, error in
                 if(auth != nil)
                 {
-                    self.E_Mail.text = ""
-                    self.Password.text = ""
+                    let alert = UIAlertController(title: "Sign Up Sucessfull!", message: nil, preferredStyle: UIAlertController.Style.alert)
+                                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { (UIAlertAction) in
+                                         self.navigationController?.popViewController(animated: true)
+                                        self.E_Mail.text = ""
+                                        self.Password.text = ""
+                                    }))
+                                    self.present(alert, animated: true, completion: nil)
                 }
                 else
                 {
